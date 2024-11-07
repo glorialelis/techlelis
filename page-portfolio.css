@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:#282828;      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;   
+    border-radius: 20px;      
+   
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    /* -------------cores---------------- */
+    --cor-principal: #1E1E1E;
+    --cor-secundaria: #7F5B37;
+    --gradiente-btn: linear-gradient(to left, #5D4330, #E0B678);
+    --cor-terciaria: #E0B678;
+    --cor-quartenaria: #9A6D4C;
+    --cinza-claro: #8d8d8d;
+
+    --cinza:#424242;
+    /* ---------------fonts-------------- */
+    --montserrart:"Montserrat", sans-serif;
+    --poppins:  "Poppins", sans-serif;
+
+}
+body{
+    background-color: var(--cor-principal);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    font-family: var(--poppins);
+    font-weight: 200;
+    font-size: .90rem;
+
+}
+.logo_techlelis{
+    width: 10%;
+    height: 100%;
+   ;
+}
+ul{
+    display: flex;
+    gap: 4rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    border: solid .50px white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    justify-content: center;
+    gap: .70rem;
+}
+.WhatsApp{
+    width: 1.50rem;
+}
+a{color: white;}
+/* --------------PAGE PORTFOLIO------------------ */
+.img-page-portfolio{
+    width: 85%;
+    height: 100%;
+}

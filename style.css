@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:#282828;      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;   
+    border-radius: 20px;      
+   
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    /* -------------cores---------------- */
+    --cor-principal: #1E1E1E;
+    --cor-secundaria: #7F5B37;
+    --gradiente-btn: linear-gradient(to left, #5D4330, #E0B678);
+    --cor-terciaria: #E0B678;
+    --cor-quartenaria: #9A6D4C;
+    --cinza-claro: #8d8d8d;
+
+    --cinza:#424242;
+    /* ---------------fonts-------------- */
+    --montserrart:"Montserrat", sans-serif;
+    --poppins:  "Poppins", sans-serif;
+
+}
+body{
+    background-color: var(--cor-principal);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    font-family: var(--poppins);
+    font-weight: 200;
+    font-size: .90rem;
+
+}
+.logo_techlelis{
+    width: 150px;
+   
+   ;
+}
+ul{
+    display: flex;
+    gap: 4rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    border: solid .50px white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    justify-content: center;
+    gap: .70rem;
+}
+.WhatsApp{
+    width: 1.50rem;
+}
+a{color: white;}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    background-image: url(img/grad-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 2rem;
+   
+   
+}
+
+.inicio h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 2.30rem;
+    font-family: var(--montserrart);
+    font-weight: 600 ;
+}
+.inicio p{
+    font-family: var(--poppins);
+    font-weight: 300;
+    text-align: center;
+}
+.perder-vendas{
+    color: var();
+    font-weight: 500;
+    text-decoration: underline;
+}
+.posicionamento{
+    color: var(--cor-terciaria);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.btn-gradient{
+    display: flex;
+    align-items: center;
+    background: var(--gradiente-btn);
+    padding: 10px 25px;
+    border-radius: 30px;
+    justify-content: center;
+    gap: .70rem;
+}
+.btn-black{
+    display: flex;
+    align-items: center;
+    background: var(--cinza);
+    padding: 10px 25px;
+    border-radius: 30px;
+    justify-content: center;
+    gap: .70rem;
+
+}
+
+ .slider{
+    width: 100%;
+    height: var(--height);
+    background-color: white;
+    transform: rotate(-1deg);
+    color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000,
+        transparent
+    );
+}
+
+.list{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    white-space: nowrap;
+    font-size: 1.50rem;
+    font-weight: 600 ;
+     
+   
+   
+    
+}
+
+.list{
+    align-items: center;
+    justify-content: center;
+    animation: scrolling 10s linear infinite;
+}
+@keyframes scrolling{
+    from {
+        transform: translateX(50%);
+    }
+    to{
+        transform: translateX(-30%);
+    }
+
+}
+
+
+.itemr:hover{
+    animation-play-state: paused;
+}  
+
+.nossa_equipe{
+    padding: 90px 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 550px;
+    
+}
+.container-equipe{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.img-gloria, .img-hosana, .img-joseane{
+    width: 120px;
+}
+
+.gloria, .hosana, .joseane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .20rem;
+}
+
+.container-integrantes{
+    display: flex;
+
+    flex-direction: column;
+    gap: 3rem;
+
+   
+}
+.titulo-integrantes{
+    font-size: 2rem;
+    font-family: var(--montserrart);
+
+}
+.integrantes{
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+
+    align-items: start;
+}
+
+.nome{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profissao{
+    font-size: 13px;
+    text-align: center;
+    color: #BABABA;
+}
+
+.conteudo-equipe{
+    width: 300px;
+}
+
+.conteudo-equipe-tittle{
+    font-weight: 300;
+    font-size: 2.10rem;
+
+}
+
+.conteudo-equipe-p{
+    font-family: var(--poppins);
+    font-size: .80rem;
+    font-weight: 300;
+}
+
+.sessao-acreditar{
+    background: var(--cor-quartenaria);
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    padding: 90px 90px;
+    height: 400px;
+}
+
+.sessao-acreditar h2 {
+    font-size: 1.80rem;
+    font-weight: 400;
+}
+
+.link-contato{
+    display: flex;
+    font-weight: 600;
+    text-decoration: underline;
+    gap: .50rem;
+}
+.link-portfolio{
+    display: flex;
+    font-weight: 600;
+    text-decoration: underline;
+    gap: .50rem;
+}
+
+
+
+.seta ,.seta-baixo{
+    height: 1rem;
+}
+
+
+.sessao-acreditar-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.portfolio-tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin:  -90px 180px;
+    padding: 30px 60px;
+    height: 200px;
+    width: 1000px;
+    background-image: url(img/bg-portfolio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    border-radius: 30px;
+}
+
+.portfolio-tittle h2{
+    font-size: 2rem;
+}
+.portfolio-tittle p{
+    font-size: 1rem;
+}
+.portfolio{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 200px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.img-portfolio{
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.img-portfolio .card-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    left: 0;
+    top: 0;
+    transition: .50s;
+}
+.img-portfolio:hover .card-image{
+    scale: 1.2;
+}
+
+.container-port-1{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.empresa{
+    color: var(--cinza-claro);
+    font-size: .90rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.descricao{
+    width: 300px;
+}
+.descricao-tittle{
+    font-size: 1.20rem;
+}
+
+/* --------------PAGE PORTFOLIO------------------ */
+.fotos-portfolio{
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.img-page-portfolio{
+    border-radius: 40px;
+    width: 85%;
+    height: 100%;
+}
+
