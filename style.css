@@ -27,7 +27,8 @@ body::-webkit-scrollbar {
     /* -------------cores---------------- */
     --cor-principal: #1E1E1E;
     --cor-secundaria: #7F5B37;
-    --gradiente-btn: linear-gradient(to left, #5D4330, #E0B678);
+    --gradiente-btn: linear-gradient(45deg, #5D4330, #E0B678);
+    --gradiente-btn-2: linear-gradient(45deg, #f5c277, #E0B678);
     --cor-terciaria: #E0B678;
     --cor-quartenaria: #9A6D4C;
     --cinza-claro: #8d8d8d;
@@ -51,12 +52,14 @@ header{
     font-family: var(--poppins);
     font-weight: 200;
     font-size: .90rem;
-
 }
 .logo_techlelis{
     width: 150px;
-   
    ;
+}
+.link-header:hover{
+    color: var(--cor-terciaria);
+    transition: 1s;
 }
 ul{
     display: flex;
@@ -70,6 +73,11 @@ ul{
     border-radius: 30px;
     justify-content: center;
     gap: .70rem;
+}
+.btn:hover{
+    transform: translateY(-10px);
+    border: #E0B678 solid .50px;
+    transition: 1s;
 }
 .WhatsApp{
     width: 1.50rem;
@@ -121,7 +129,40 @@ a{color: white;}
     border-radius: 30px;
     justify-content: center;
     gap: .70rem;
+    position: relative;
 }
+.btn-gradient::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gradiente-btn-2);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.btn-gradient::before{
+    content: "";
+    background: var(--gradiente-btn);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.btn-gradient:hover::before{
+    opacity: 1;
+}
+
 .btn-black{
     display: flex;
     align-items: center;
@@ -130,8 +171,15 @@ a{color: white;}
     border-radius: 30px;
     justify-content: center;
     gap: .70rem;
-
 }
+.btn-black:hover{
+    transform: translateY(-10px);
+    border: #E0B678 solid .50px;
+    transition: 1s;
+    transform: scaleY(-25px);
+    transition: 1s;
+}
+
 
  .slider{
     width: 100%;
@@ -394,4 +442,57 @@ a{color: white;}
     width: 85%;
     height: 100%;
 }
+/* ------------------PAGE POSTAGEM--------------------- */
+.postagem-portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-postagem{
+    width: 90%;
+    height: 100%;
+}
+
+/* -------------------PAGE B&C----------------------------- */
+.bec-portfolio{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.img-bec{
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+}
+.conteudo-bec{
+    margin-top: 45px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-bec{
+    width: 30%;
+}
+.title-bec{
+    font-family: var(--montserrart);
+    font-size: 2.50rem;
+    font-weight: 600;
+}
+.p-bec{
+    font-family: var(--poppins);
+    font-size: .90rem;
+    font-weight: 300;
+}
+
 
