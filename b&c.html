@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Postagem D&C - Portfólio Techlelis</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
 </head>
 <body>
     <header>
-        <a   href="index.html"><img class="logo_techlelis" src="img/logo techlelis.png" alt=""></a>
-        <ul>
-           <li><a href="">Nossos serviços</a></li>
-           <li><a href="">Contatos</a></li>
-           <li><a href="">Quem somos</a></li>
-        </ul>
-        <a href="#" class="btn">
+        <a href="index.html"><img  class="logo_techlelis"  src="img/logo techlelis.png" alt=""></a>
+        <nav  id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+              </button>
+        
+        <ul id="menu" role="menu">
+           <li><a class="link-header" href="">Nossos serviços</a></li>
+           <li><a class="link-header" href="">Contatos</a></li>
+           <li><a  class="link-header" href="">Quem somos</a></li>
+           <a href="#" class="btn" >
             <p>Chamar no Whatsapp</p>
             <img class="WhatsApp" src="img/WhatsApp logo.png" alt="">
-        </a>
+            </a>
+        </ul>
+        
+        </nav>
     </header>
     <main>
         <section class="bec-portfolio">
@@ -37,6 +45,6 @@
 
         </section>
     </main>
-    
+    <script src="./script.js"></script>
 </body>
 </html>

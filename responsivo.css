@@ -170,4 +170,7 @@
         align-items: center;
     
     }
+    .img-page-portfolio, .img-bec, .img-postagem{
+        border-radius: 10px;
+    }
   }
