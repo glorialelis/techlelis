@@ -39,6 +39,9 @@ body::-webkit-scrollbar {
     --poppins:  "Poppins", sans-serif;
 
 }
+html, body {
+    overflow-x: hidden;
+}
 body{
     background-color: var(--cor-principal);
     color: white;
@@ -53,6 +56,29 @@ header{
     font-weight: 200;
     font-size: .90rem;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+}
+#menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+  }
+  
+  /* #menu a {
+    display: block;
+    padding: 0.5rem;
+  } */
+  
+  #btn-mobile {
+    display: none;
+  }
+
 .logo_techlelis{
     width: 150px;
    ;
