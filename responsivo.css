@@ -15,7 +15,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 
     .inicio{
         background-size: 90%;
@@ -31,14 +31,14 @@
         font-size: .90rem;
     }
 
-    /* ---------------LISTA------------------- */
+   
     .list{
         font-size: 1.20rem;
         gap: .50rem;
         animation: scrolling 5s linear infinite;
     }
     
-    /* -------------SESSÃO EQUIPE------------- */
+    
 
     .nossa_equipe{
         height: 800px;
@@ -75,7 +75,7 @@
         gap: 1rem;
     }
 
-    /* -------------SESSÃO ACREDITAR------------------ */
+    
     .sessao-acreditar{
         flex-direction: column;
         padding: 0 20px 70px;
@@ -95,9 +95,10 @@
     .portfolio{
         padding: 90px 20px;
     }
-}
+}  */
 
-@media (max-width: 600px) {
+@media (max-width: 900px){
+/* --------------------MENU MOBILE---------------------- */
     .logo_techlelis{
         width: 7rem;
         margin-bottom: -.50rem;
@@ -162,15 +163,166 @@
     #nav.active #hamburger::after {
       transform: rotate(-135deg);
       top: -7px;
-    }
-    .btn{
-        height: 16px;
-        width: 250px;
-        display: flex;
-        align-items: center;
+
+}
+
+/* ---------------------SESSÃO 1-------------------------- */
+.nossa_equipe{
+    margin-top: 100px;
+    height: auto;
+    padding-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.container-equipe{
+    padding-left: 0;
+  
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    max-width: 700px;
     
-    }
-    .img-page-portfolio, .img-bec, .img-postagem{
-        border-radius: 10px;
-    }
+}
+/* ----------------------IMAGENS----------------------- */
+.integrantes{
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.gloria, .hosana, .joseane{
+  width: 25%;
+
+}
+.img-gloria, .img-hosana, .img-joseane{
+  width: 100%;
+}
+
+/* -----------------------TEXTOS--------------------------- */
+
+.conteudo-equipe-tittle{
+  width: 500px;
+}
+.conteudo-equipe-p{
+  width: 400px;
+  
+}
+.conteudo-equipe{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* -----------------SESSÃO 2 (ACREDITAR)---------------------- */
+.sessao-acreditar{
+  gap: 0;
+}
+
+}
+
+ @media (max-width: 834px) {
+  .container-equipe{
+    padding-left: 60px 0 60px;
+
   }
+   .sessao-acreditar{
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 20%;
+   }
+}
+
+@media(max-width: 640px){
+  .container-port-1{
+    flex-direction: column;
+  }
+  .portfolio{
+    height: 2000px;
+    margin-top: 30px;
+  }
+  .container-acreditar{
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+
+}
+
+ @media (max-width: 520px){
+  .inicio h1{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .conteudo-equipe-tittle{
+    width: auto;
+  }
+
+  .gloria, .hosana, .joseane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .20rem;
+    width: 30%;
+}
+
+.card{
+  width: 95%;
+}
+.container-port-1{
+  width: 100%;
+}
+  
+  
+}
+
+@media (max-width: 460px){
+  .paragrafoinicio{
+    font-size: .90rem;
+  }
+  .inicio h1{
+    font-size: 1.80rem;
+  }
+
+  .portfolio-tittle{
+    gap: 1rem;
+    height: 0;
+   
+
+  }
+}
+
+@media (max-width: 435px){
+  .conteudo-equipe-p{
+    width: 330px;
+  }
+} 
+
+@media (max-width: 405px){
+
+  .paragrafoinicio{
+    width: 85%;
+    max-width: 400ch;
+    overflow: hidden;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+  }
+
+  .inicio h1{
+    width: 95%;
+    line-height: 1.80rem;
+  }
+}
+
+@media (max-width: 395px){
+  .nome{
+    font-size: .80rem;
+    white-space: nowrap;
+  }
+  .integrantes{
+    align-items: start;
+  }
+
+
+}
+

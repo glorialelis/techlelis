@@ -1,28 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-body::-webkit-scrollbar {
-    width: 5px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background:#282828;      
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: white;   
-    border-radius: 20px;      
-   
-  }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
 :root{
     /* -------------cores---------------- */
     --cor-principal: #1E1E1E;
@@ -39,6 +17,32 @@ body::-webkit-scrollbar {
     --poppins:  "Poppins", sans-serif;
 
 }
+/* ----------BARRA DE ROLAGEM---------------- */
+
+ body::-webkit-scrollbar {
+    width: 5px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:#282828;      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;   
+    border-radius: 20px;      
+   
+  } 
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
 html, body {
     overflow-x: hidden;
 }
@@ -48,26 +52,31 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
+
     font-family: var(--poppins);
     font-weight: 200;
     font-size: .90rem;
+    white-space: nowrap
 }
-nav{
+/* nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    gap: .50rem;
 
-}
+} */
 #menu {
+    width: 90%;
+    max-width: 930px;
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
-    gap: 3rem;
+    gap: 1rem;
   }
   
   /* #menu a {
@@ -81,7 +90,6 @@ nav{
 
 .logo_techlelis{
     width: 150px;
-   ;
 }
 .link-header:hover{
     color: var(--cor-terciaria);
@@ -259,7 +267,7 @@ a{color: white;}
 }  
 
 .nossa_equipe{
-    padding: 90px 90px;
+    /* padding: 90px 90px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -270,9 +278,11 @@ a{color: white;}
     
 }
 .container-equipe{
+    width: 90%;
+    max-width: 930px;
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 1rem;
 }
 
 .img-gloria, .img-hosana, .img-joseane{
@@ -336,13 +346,27 @@ a{color: white;}
 }
 
 .sessao-acreditar{
-    background: var(--cor-quartenaria);
     display: flex;
     justify-content: center;
-    gap: 8rem;
-    padding: 90px 90px;
+    align-items: center;
+    
+    background: var(--cor-quartenaria);
+    width: 100%;
+    padding: 30px 0 90px 0;
     height: 400px;
 }
+.container-acreditar{
+    gap: 8rem;
+    width: 90%;
+    max-width: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .container-acreditar h2{
+    
+} */
+
 
 .sessao-acreditar h2 {
     font-size: 1.80rem;
@@ -375,15 +399,41 @@ a{color: white;}
     gap: 1rem;
 }
 
+.portfolio{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+    height: 900px;
+    
+    /* padding: 150px 200px; */
+    gap: 2rem;
+    
+}
+.container-portfolio-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    width: 100%;
+    width: 100%;
+}
+
 .portfolio-tittle{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    margin:  -90px 180px;
+
+    
     padding: 30px 60px;
     height: 200px;
-    width: 1000px;
+    width: 90%;
+    max-width: 1000px;
+    
     background-image: url(img/bg-portfolio.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -397,24 +447,30 @@ a{color: white;}
 .portfolio-tittle p{
     font-size: 1rem;
 }
-.portfolio{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 150px 200px;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-}
+
 .img-portfolio{
-    width: 450px;
-    height: 450px;
+    /* width: 90%;
+    height: 450px; */
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-width: 450px;
+
     border-radius: 20px;
     position: relative;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
+}
+/* .card-image{
+    height: 450px;
+    width: 450px;
+    
+} */
+
+.card-image{
+    width: 100%;
+    height: 100%;
 }
 .img-portfolio .card-image{
     position: absolute;
@@ -430,8 +486,13 @@ a{color: white;}
 }
 
 .container-port-1{
+    width: 90%;
+    max-width: 930px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 1000px;
+    
     gap: 1rem;
 }
 .empresa{
@@ -439,6 +500,9 @@ a{color: white;}
     font-size: .90rem;
 }
 .card{
+    height: 100%;
+    width: 90%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
