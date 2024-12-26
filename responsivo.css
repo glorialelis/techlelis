@@ -15,88 +15,6 @@
 
 }
 
-/* @media screen and (max-width: 768px) {
-
-    .inicio{
-        background-size: 90%;
-    }
-    .inicio h1{
-        text-align: center;
-        font-size: 30px;
-        line-height: 2rem;
-        font-family: var(--montserrart);
-        font-weight: 600 ;
-    }
-    .paragrafoinicio{
-        font-size: .90rem;
-    }
-
-   
-    .list{
-        font-size: 1.20rem;
-        gap: .50rem;
-        animation: scrolling 5s linear infinite;
-    }
-    
-    
-
-    .nossa_equipe{
-        height: 800px;
-        margin: 0;
-        justify-content: start;
-        align-items: start;
-        padding: 40px 20px;
-
-    }
-    .container-equipe{
-        flex-direction: column;
-        height: 1000px;
-        justify-content: center;
-        gap: 4rem;
-    }
-    .integrantes{
-        gap: 2rem;
-    }
-
-    .img-gloria, .img-hosana, .img-joseane{
-        width: 100px;
-    }
-    .nome{
-        font-size: .90rem;
-        font-family: var(--montserrart);
-    }
-    .profissao{
-        font-family: var(--poppins);
-        font-size: .75rem;
-    }
-    .conteudo-equipe{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    
-    .sessao-acreditar{
-        flex-direction: column;
-        padding: 0 20px 70px;
-        gap: 1rem;
-    }
-    .portfolio-tittle{
-        margin:  -90px 15px;
-        width: 400px;  
-    }
-    .container-port-1{
-        flex-direction: column;
-        gap: 3rem;
-    }
-    .img-portfolio{
-        width: 400px;
-    }
-    .portfolio{
-        padding: 90px 20px;
-    }
-}  */
-
 @media (max-width: 900px){
 /* --------------------MENU MOBILE---------------------- */
     .logo_techlelis{
@@ -116,10 +34,19 @@
       visibility: hidden;
       overflow-y: hidden;
     }
+    #menu .btn{
+      display: hidden;
+    }
     #nav.active #menu {
       height: calc(100vh - 70px);
+      position: absolute;
       visibility: visible;
       overflow-y: auto;
+      background-color: #1E1E1E;
+    }
+
+    .btn{
+      display: none;
     }
     li{
         margin-top: 1rem;
@@ -142,6 +69,8 @@
       border-top: 2px solid white;
       width: 20px;
     }
+
+    
     #hamburger::after,
     #hamburger::before {
       content: '';
@@ -245,10 +174,21 @@
     gap: 20px;
     align-items: start;
   }
+  .conteudo-bec 
+  .btn-gradient{
+    width: 100%;
+  }
 
 }
 
  @media (max-width: 520px){
+
+  .btn-gradient{
+    width: 200px;
+  }
+  .inicio{
+    background-size: 95%;
+}
   .inicio h1{
     font-size: 2rem;
     line-height: 2rem;
@@ -264,6 +204,12 @@
     justify-content: center;
     gap: .20rem;
     width: 30%;
+}
+
+
+.list{
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .card{
@@ -283,12 +229,8 @@
   .inicio h1{
     font-size: 1.80rem;
   }
-
   .portfolio-tittle{
     gap: 1rem;
-    height: 0;
-   
-
   }
 }
 
@@ -296,6 +238,7 @@
   .conteudo-equipe-p{
     width: 330px;
   }
+  
 } 
 
 @media (max-width: 405px){
@@ -312,6 +255,21 @@
     width: 95%;
     line-height: 1.80rem;
   }
+
+  .container-portfolio-tittle{
+   height: 200px;
+  }
+
+  .portfolio-tittle{
+    padding: 20px;
+    height: 100%;
+  }
+
+  .sessao-acreditar{
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 20%;
+   }
 }
 
 @media (max-width: 395px){
@@ -325,4 +283,5 @@
 
 
 }
+
 
