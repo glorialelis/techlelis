@@ -36,9 +36,12 @@
   object {
     display:none
     }
-  html, body {
-    /* height: 100%; */
+   body {
     overflow-x: hidden;
+} 
+
+html, body{
+    overflow: visible;
 }
 
 *{
@@ -590,5 +593,3 @@ a{color: white;}
     font-size: .90rem;
     font-weight: 300;
 }
-
-
