@@ -32,11 +32,12 @@
     border-radius: 20px;      
    
   } 
+
   object {
     display:none
     }
   html, body {
-   
+    /* height: 100%; */
     overflow-x: hidden;
 }
 
@@ -58,7 +59,7 @@ body{
 header{
     padding-top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     font-family: var(--poppins);
